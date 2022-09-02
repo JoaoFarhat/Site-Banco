@@ -60,12 +60,16 @@ nav {
 }
 
 .login {
+    /* tirar estilo da lista */
     list-style: none;
-    display: block;
+    /* alinha a lista  */
+    display: flex;
 }
 
 .login li a {
+    /* espaçamento entre letras  */
     letter-spacing: 3px;
+     /* tamanho da margem para afastar */
     margin-left: 30px;
 
 }
