@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif  ;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #201b2c;
+}
+
+.menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    background: #00ff88;
+    width: 20vw;
+    border-radius: 10px;
+    border-left: 5px solid #00ff88;
+    box-sizing: initial;
+    transition: width 0.5s;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.menu ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.menu ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.menu ul li.ativa {
+    background: #fff;
+}
+
+.menu ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #2b134b;
+}
+
+.menu ul li a .icone {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.menu ul li a .icone i {
+    font-size: 1.5rem;
+}
+
+.menu ul li a .titulo {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
