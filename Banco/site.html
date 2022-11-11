@@ -1,49 +1,131 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SS Bank</title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/site.css"/>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" href="css/site.css">
+    <title>SS Bank's</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="lista ativa">
+                <b></b>
+                <b></b>
+                <a href="site.html">
+                    <span class="icone"><i class='bx bx-home' ></i></span>
+                    <span class="titulo">Home</span>
+                </a>
+            </li>
+            <li class="lista">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icone"><i class='bx bx-money' ></i></span>
+                    <span class="titulo">Depósito</span>
+                </a>
+            </li>
+            <li class="lista">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icone"><i class='bx bx-transfer' ></i></span>
+                    <span class="titulo">Pix</span>
+                </a>
+            </li>
+            <li class="lista">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icone"><i class='bx bx-receipt'></i></span>
+                    <span class="titulo">Extrato</span>
+                </a>
+            </li>
+            <li class="lista">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icone"><i class='bx bxs-wallet' ></i></span>
+                    <span class="titulo">Saldo</span>
+                </a>
+            </li>
+            <li class="lista">
+                <b></b>
+                <b></b>
+                <a href="#">
+                    <span class="icone"><i class='bx bx-user' ></i></span>
+                    <span class="titulo">Perfil</span>
+                </a>
+            </li>
+            <li class="lista">
+                <b></b>
+                <b></b>
+                <a href="login.html">
+                    <span class="icone"><i class='bx bx-log-out' ></i></span>
+                    <span class="titulo">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-    <body>
-        <header>
-            <nav class="nav-bar">
-                <div class="logo">
-                <h1>SS Bank's</h1>
-                </div>
-                <div class="nav-list">
-                    <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Depositar</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sacar</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Transferir</a></li>
-                    </ul>
-                </div>
+    <div class="alternar">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+    </div>
 
-                <div class="deposit-button">
-                    <button><a href="#">Depositar</a></button>
+    <div class="container">
+        <div class="box">
+            <div class="conteudo">
+                <div class="icone">
+                    <ion-icon name="cash-outline"></ion-icon>
                 </div>
-
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                <div class="texto">
+                    <h3>Depósito</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolores rem voluptatibus fugit facere!
+                    </p>
+                    <a href="#">Saiba Mais</a>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="mobile-menu">
-                    <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sacar</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Transferir</a></li>
-                    </ul>
-
-                    <div class="deposit-button">
-                        <button><a href="#">Depositar</a></button>
-                    </div>
+    <div class="container">
+        <div class="box">
+            <div class="conteudo">
+                <div class="icone">
+                    <ion-icon name="swap-horizontal-outline"></ion-icon>
                 </div>
-            </nav>
-        </header>
-        <script src="js/site.js"></script>
-    </body>
+                <div class="texto">
+                    <h3>Transferência</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolores rem voluptatibus fugit facere!
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="conteudo">
+                <div class="icone">
+                    <ion-icon name="receipt-outline"></ion-icon>
+                </div>
+                <div class="texto">
+                    <h3>Extrato</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolores rem voluptatibus fugit facere!
+                    </p>
+                    <a href="#">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/site.js"></script>
+    
 </html>
