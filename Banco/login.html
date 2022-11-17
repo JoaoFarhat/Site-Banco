@@ -1,0 +1,39 @@
+    <!--Cabeçalho-->
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/login.css">
+
+        <title>Login</title>
+    </head>
+    <body>
+        <!--Div principal do login-->
+        <div class="main-login">
+            <!--Div da esquerda do titulo com a imagem-->
+            <div class="left-login">
+                <h1>SS Bank's<br>Faça seu Login<br>E tenha seu controle financeiro</h1>
+                <img src="img/Dono_de_negocios.svg" class="left-login-image" alt="">
+            </div>
+            <!--Div da direita com o formulário do login-->
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <form action="testLogin.php" method="POST">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" placeholder="CPF">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" placeholder="Senha">
+                        </div>
+                        <input type="submit" name="submit" class="button-login" value="Login">
+                    </form> 
+                    <!--Link para o cadastro-->
+                    <a href="cadastro.html">Não possui login? Cadastre-se</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+    </html>
