@@ -1,0 +1,48 @@
+<!--Cabeçalho-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>SS Bank's</title>
+</head>
+<body>
+    <!--Div principal que receberá as div's filhas-->
+    <div class="main-cadastro">
+        <!--Div da esquerda onde ficará a imagem e o h1-->
+        <div class="left-cadastro">
+            <h1>Ainda não se juntou ao time?<br>Faça seu Cadastro</h1>
+            <img src="img/banco_no_celular.svg" class="left-cadastro-image" alt="banco no celular">            
+        </div>
+        <!--Div da direita onde fica o formulário para cadastro-->
+        <div class="right-cadastro">
+            <div class="card-cadastro"> 
+                <h1>CADASTRO</h1>
+                <div class="textfield-1">
+                <form action="cadastro.php" method="POST">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" placeholder="Nome Completo">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" placeholder="CPF">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="textfield-2">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" placeholder="Endereço">
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input placeholder="Data de Nascimento" name="data-nascimento" type="date" onfocus="(this.type = 'date')"  id="date">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <input type="submit" name="submit" class="button-cadastro" value="CADASTRO">
+            </form>
+                    <a href="login.html">Ja possui conta? Faça seu Login</a>            
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

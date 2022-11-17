@@ -1,0 +1,311 @@
+/*importa a fonte do site*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+
+/*tira a margem e os espaçamentos e coloca a fonte*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif ;
+
+}
+
+/*da formato ao corpo do site*/
+body {
+    min-height: 100vh;
+    background-color: #201b2c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/*muda o formato do menu*/
+.menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    background: #00ff88;
+    width: 3.8vw;
+    border-radius: 10px;
+    border-left: 5px solid #00ff88;
+    box-sizing: initial;
+    transition: width 0.5s;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    overflow-x: hidden;
+    display: flex;
+}
+
+/*coloca o tamanho do menu quando ativo*/
+.menu.ativa {
+    width: 25vw;
+}
+
+/*muda o formato da lista */
+.menu ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+/*muda o formato dos objetos da lista do menu*/
+.menu ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/*coloca cor na opção selecionada na lista*/
+.menu ul li.ativa {
+    background: #77ffc0;
+}
+
+/*muda a posição dos link da lista do menu*/
+.menu ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #2b134b;
+}
+
+/*seleciona elementos com base em suas 
+posições em um grupo de elementos irmãos.*/
+.menu ul li b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #77ffc0;
+    display: none;
+}
+
+/*seleciona elementos com base em suas 
+posições em um grupo de elementos irmãos após ativo*/
+.menu ul li b:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #00ff88;
+}
+
+/*seleciona elementos com base em suas 
+posições em um grupo de elementos irmãos.*/
+.menu ul li b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #77ffc0;
+    display: none;
+}
+
+/*seleciona elementos com base em suas 
+posições em um grupo de elementos irmãos após ativo*/
+.menu ul li b:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #00ff88;
+}
+/*coloca display no menu após ser ativo*/
+.menu ul li.ativa b:nth-child(1), .menu ul li.ativa b:nth-child(2){
+    display: block;
+}
+
+/*muda a posição dos icones*/
+.menu ul li a .icone {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+/*muda o tamanho dos icones do menu*/
+.menu ul li a .icone i {
+    font-size: 1.5rem;
+}
+
+/*muda os titulos dos links do menu*/
+.menu ul li a .titulo {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+/*da formato ao botão superior do menu*/
+.alternar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #00ff88;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*muda a cor do botão quando esta ativo*/
+.alternar.ativa {
+    background: #77ffc0;
+}
+
+/*mostra os ícones*/
+.alternar ion-icon{
+    position: absolute;
+    color: #2b134b;
+    font-size: 2rem;
+    display: none;
+}
+
+/*mostra o ícone selecionado*/
+.alternar ion-icon.open, .alternar.ativa ion-icon.close {
+    display: block;
+    
+}
+
+/*tira o icone que esta desativado*/
+.alternar ion-icon.close, .alternar.ativa ion-icon.open{
+    display: none;
+
+}
+
+/*muda a forma da div mãe*/
+.main-transferencia {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*muda a div do depósito*/
+.left-deposito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*muda o tamanho da fonte e a cor dos titulos*/
+.left-deposito h1 {
+    font-size: 2.6vw;
+    color: #77ffc0;
+}
+
+/*muda o formato da div direita*/
+.right-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*muda o formato do formulario*/
+.card-cadastro {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+/*muda a cor e aumenta o negrito dos h1 do card de formulario*/
+.card-cadastro h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+/*muda o tamanho da fonte*/
+.card-cadastro p{
+    font-size: 20px;
+}
+
+/*tira a decoração e a cor dos links*/
+.card-cadastro a {
+    text-decoration: none;
+    color: #00ff88;
+}
+
+/*muda o formulario*/
+.textfield-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+/*muda o campo tipo do formulario*/
+.textfield-tipo{
+    display: flex;
+    align-items: center;
+}
+
+/*da cor aos label em cima dos inputs*/
+.textfield-1 label, .textfield-2 label {
+    color:#f0ffffde;
+}
+
+/*muda o formato dos inputs*/
+.textfield-1 input, .textfield-2 input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color:#f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/*muda o formato do input submit*/
+.button-cadastro {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;  
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+}
